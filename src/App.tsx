@@ -1,25 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PlugCheckout from "@plug-checkout/react";
+
+import {
+  PlugCheckoutOneShotSuccess,
+  PlugCheckoutOneShotError,
+} from "./App.types";
 
 function App() {
+  function handlePaymentSucces(data: PlugCheckoutOneShotSuccess) {
+    console.log(data);
+  }
+
+  function handlePaymentFailed(error: PlugCheckoutOneShotError) {
+    console.log(error);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <PlugCheckout
+        sandbox
+        apiKey={process.env.REACT_APP_PLUG_API_KEY}
+        clientId={process.env.REACT_APP_PLUG_CLIENT_ID}
+        merchantId={process.env.REACT_APP_PLUG_MERCHANT_ID}
+        statementDescriptor="#1 Demonstration Plug Checkout"
+        amount={100}
+        onPaymentSuccess={({ detail }) => handlePaymentSucces(detail.data)}
+        onPaymentFailed={({ detail }) => handlePaymentFailed(detail.error)}
+        installmentsConfig={{ show: true, quantity: 2 }}
+        customFormStyleClasses={{
+          submitButton: "custom-submit-button",
+        }}
+      />
+    </main>
   );
 }
 
