@@ -24,7 +24,7 @@
   --plug-checkout-color-success: #32c000;
 
   /* Typography */
-  --plug-checkout-typography-family: "Lato", sans-serif;
+  --plug-checkout-typography-family: 'Lato', sans-serif;
 
   /* Spacings */
   --plug-checkout-spacing-xxs: 4px;
