@@ -6,7 +6,7 @@ import {
 } from "./App.types";
 
 function App() {
-  function handlePaymentSucces(data: PlugCheckoutOneShotSuccess) {
+  function handlePaymentSuccess(data: PlugCheckoutOneShotSuccess) {
     console.log(data);
   }
 
@@ -23,7 +23,7 @@ function App() {
         merchantId={process.env.REACT_APP_PLUG_MERCHANT_ID}
         statementDescriptor="#1 Demonstration Plug Checkout"
         amount={100}
-        onPaymentSuccess={({ detail }) => handlePaymentSucces(detail.data)}
+        onPaymentSuccess={({ detail }) => handlePaymentSuccess(detail.data)}
         onPaymentFailed={({ detail }) => handlePaymentFailed(detail.error)}
         installmentsConfig={{ show: true, quantity: 2 }}
         customFormStyleClasses={{
