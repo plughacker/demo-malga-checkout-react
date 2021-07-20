@@ -1632,22 +1632,22 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@plug-checkout/core@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-0.0.3.tgz#457a985a7831e5c1a6b9cbaed55dfa04d0192870"
-  integrity sha512-vKKvSXXDQtiG3oKYms0lSpwvRNtoOKjjAaolfq/wOP3KNYdI/J0f4ABDDtTMxYla/AZbNCzA9aXGuL9AAfb8vw==
+"@plug-checkout/core@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-0.0.4.tgz#ab0121323a8c981647539921263db6ae66429b47"
+  integrity sha512-IYQ7pG1AJfN+PCmwxCoPQSQjW4zWtA2ZmTEn+KMdxuesvMlFhO+r/P45rJZ8ODYJrgrvivJa/3s7+EdeaN/toQ==
   dependencies:
     axios "^0.21.1"
     inputmask "^5.0.6"
     payment "2.3.0"
     yup "^0.32.9"
 
-"@plug-checkout/react@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/react/-/react-0.0.3.tgz#07a13554c9a9fbd7f135e5476820b425ca19e4eb"
-  integrity sha512-iKFujVEFHhecYKONFbxJ4RenWsUwgU/rumAi3ErOneZa4D2fIJGGM4HwUVECLL1N4/GNfudYOiETDuPadXdsLA==
+"@plug-checkout/react@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@plug-checkout/react/-/react-0.0.4.tgz#34c414403f85df89a2bb1a01e6e3d21d64fc5c36"
+  integrity sha512-5DGwdJStPXZWMOq/Iz6H2WJPOqXcpDBKrTtZK9Ek9Oku3xlhaQ8q6XYjZDymQchrbF7brfRLU7fcxkPkb+pGiQ==
   dependencies:
-    "@plug-checkout/core" "0.0.3"
+    "@plug-checkout/core" "0.0.4"
 
 "@pmmmwh/react-refresh-webpack-plugin@0.4.3":
   version "0.4.3"

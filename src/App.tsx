@@ -18,7 +18,7 @@ function App() {
     <main>
       <PlugCheckout
         sandbox
-        apiKey={process.env.REACT_APP_PLUG_API_KEY}
+        publicKey={process.env.REACT_APP_PLUG_PUBLIC_KEY}
         clientId={process.env.REACT_APP_PLUG_CLIENT_ID}
         merchantId={process.env.REACT_APP_PLUG_MERCHANT_ID}
         statementDescriptor="#1 Demonstration Plug Checkout"
