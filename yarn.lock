@@ -1650,7 +1650,7 @@
     payment "2.3.0"
     yup "^0.32.9"
 
-"@plug-checkout/react@^1.0.5":
+"@plug-checkout/react@latest":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@plug-checkout/react/-/react-1.0.5.tgz#12d243c05ad7c977fba5cc7dedef0485d591ff49"
   integrity sha512-E+rSixpHrrgNvu8rrvVY+4EhqrsOz6PoieSs4jiJNJV6BteM+lTGy7TXiagZ/1zmMqX4QHYdEXGXWC7CS9ZsnA==
