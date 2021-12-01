@@ -1640,9 +1640,9 @@
     rimraf "^3.0.2"
 
 "@plug-checkout/core@*":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-1.0.3.tgz#477a3d433304400e228aef46684932ab7080cae5"
-  integrity sha512-sxl5t/k9biGuX+1As/9b8LMIpmOxa3tY3B3NXkNtYUTdLwnJsC8gcCK+63ahIOK1nOguR+xKoO+4yHgxwaPn3g==
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-1.0.4.tgz#856732d7416ed911d0f395d2a9eb416c67c514df"
+  integrity sha512-pgpQFZj2RlgKSU+Q1t2RhvMLJleP1op53CHd0dMZkgEb0kil/OiuSUqzcC1DWCZ1fwEKbZIUpUOWIsCC4GhupQ==
   dependencies:
     axios "^0.21.1"
     brazilian-values "^0.10.1"
@@ -1650,10 +1650,10 @@
     payment "2.3.0"
     yup "^0.32.9"
 
-"@plug-checkout/react@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/react/-/react-1.0.4.tgz#d99a2e2ba2030a79a5e0b8705239ce3cbed00962"
-  integrity sha512-Gpr2hT0wa1xa3QlWb1vnHuybU1MQFiUbdggZGom1OT4a6Hb20gNaGbJWM3BbTwHFMIl4TRjNtB+CrNECYUcNbA==
+"@plug-checkout/react@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@plug-checkout/react/-/react-1.0.5.tgz#12d243c05ad7c977fba5cc7dedef0485d591ff49"
+  integrity sha512-E+rSixpHrrgNvu8rrvVY+4EhqrsOz6PoieSs4jiJNJV6BteM+lTGy7TXiagZ/1zmMqX4QHYdEXGXWC7CS9ZsnA==
   dependencies:
     "@plug-checkout/core" "*"
 
