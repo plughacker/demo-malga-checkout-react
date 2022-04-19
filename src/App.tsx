@@ -30,6 +30,7 @@ function App() {
               quantity: 12,
               show: true,
             },
+            checkedSaveCard: false,
             showCreditCard: true,
           },
           boleto: {
