@@ -1610,6 +1610,27 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
+"@malga-checkout/core@1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@malga-checkout/core/-/core-1.7.0.tgz#b22afbd999f5bca75ea13723b54e1fe17ae88200"
+  integrity sha512-HtXx40+nmOf7BkxHY3QHkyAfzVNwf+RHehOI00fhB1yz4MdToKBGgTCqUYhOS2CpcgafU/zVKDiSlVbMgXEzYA==
+  dependencies:
+    "@stencil/store" "^1.5.0"
+    axios "^0.21.1"
+    brazilian-values "^0.10.1"
+    inputmask "^5.0.6"
+    matercolors "^2.3.0"
+    payment "2.3.0"
+    uuid "^8.3.2"
+    yup "^0.32.9"
+
+"@malga-checkout/react@latest":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@malga-checkout/react/-/react-1.7.0.tgz#03aae9a831dc8939d7dd480e0991f22d6dd08d95"
+  integrity sha512-VtraIuGruvh8Cl82BZALfoMbWf1iwwEBae9hi8ET/HfBWBSfpvwnQixVgbzdRTGRSO5U+KBL+fjAtCsuuskolw==
+  dependencies:
+    "@malga-checkout/core" "1.7.0"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1638,24 +1659,6 @@
   dependencies:
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
-
-"@plug-checkout/core@*":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/core/-/core-1.0.4.tgz#856732d7416ed911d0f395d2a9eb416c67c514df"
-  integrity sha512-pgpQFZj2RlgKSU+Q1t2RhvMLJleP1op53CHd0dMZkgEb0kil/OiuSUqzcC1DWCZ1fwEKbZIUpUOWIsCC4GhupQ==
-  dependencies:
-    axios "^0.21.1"
-    brazilian-values "^0.10.1"
-    inputmask "^5.0.6"
-    payment "2.3.0"
-    yup "^0.32.9"
-
-"@plug-checkout/react@latest":
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/@plug-checkout/react/-/react-1.0.5.tgz#12d243c05ad7c977fba5cc7dedef0485d591ff49"
-  integrity sha512-E+rSixpHrrgNvu8rrvVY+4EhqrsOz6PoieSs4jiJNJV6BteM+lTGy7TXiagZ/1zmMqX4QHYdEXGXWC7CS9ZsnA==
-  dependencies:
-    "@plug-checkout/core" "*"
 
 "@pmmmwh/react-refresh-webpack-plugin@0.4.3":
   version "0.4.3"
@@ -1710,6 +1713,11 @@
   integrity sha512-MZPUxrmFubI36XS1DI3qmI0YdN1gks62JtFZvxR67ljjSNCeK6U08Zx4msEWOXuofgqUt6zPHSi1H9fbjR/NRA==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@stencil/store@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@stencil/store/-/store-1.5.0.tgz#5c4e14ed078771bb8ed635867cfa8c3452f15ac4"
+  integrity sha512-fe5fCF6dgVlDM1iLRkkJUyUh0Tfx305asVGgMAJjIs7Q+x/b1pGgTLROm9Ibr53PZuFwr5Kg+4h9p4FLbYqHgA==
 
 "@surma/rollup-plugin-off-main-thread@^1.1.1":
   version "1.4.2"
@@ -7459,6 +7467,11 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+matercolors@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/matercolors/-/matercolors-2.3.0.tgz#f90055d99303f11dad0c6b15f0574f9d251ed5b6"
+  integrity sha512-IqwCB/uao4mI/ZnySGxN5WVfuXj4+1k/IS8u+KvH1nrDEb8XkdZWR8sl9mZuh17GSVfGu0AuGAWYpWFZKGBF0A==
+
 md5.js@^1.3.4:
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/md5.js/-/md5.js-1.3.5.tgz#b5d07b8e3216e3e27cd728d72f70d1e6a342005f"
@@ -11422,7 +11435,7 @@ uuid@^3.3.2, uuid@^3.4.0:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-uuid@^8.3.0:
+uuid@^8.3.0, uuid@^8.3.2:
   version "8.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==

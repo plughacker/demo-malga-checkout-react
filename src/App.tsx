@@ -1,22 +1,17 @@
-import PlugCheckout from '@plug-checkout/react'
-
-import {
-  PlugCheckoutTransactionErrorEvent,
-  PlugCheckoutTransactionSuccessEvent,
-} from './App.types'
+import MalgaCheckout from '@malga-checkout/react'
 
 function App() {
-  function handlePaymentSuccess(data: PlugCheckoutTransactionSuccessEvent) {
+  function handlePaymentSuccess(data: any) {
     console.log(data)
   }
 
-  function handlePaymentFailed(error: PlugCheckoutTransactionErrorEvent) {
+  function handlePaymentFailed(error: any) {
     console.log(error)
   }
 
   return (
     <main>
-      <PlugCheckout
+      <MalgaCheckout
         sandbox
         publicKey="<YOUR_PUBLIC_KEY>"
         clientId="<YOUR_CLIENT_ID>"
@@ -47,7 +42,7 @@ function App() {
           },
         }}
         transactionConfig={{
-          statementDescriptor: '#1 Demonstration Plug Checkout',
+          statementDescriptor: '#1 Demonstration Malga Checkout',
           amount: 100,
           description: '',
           orderId: '',
@@ -60,7 +55,7 @@ function App() {
           actionButtonLabel: 'Continuar',
           errorActionButtonLabel: 'Tentar novamente',
           successActionButtonLabel: 'Continuar',
-          successRedirectUrl: 'https://www.plugpagamentos.com/',
+          successRedirectUrl: 'https://www.malga.io/',
         }}
         onPaymentSuccess={handlePaymentSuccess}
         onPaymentFailed={handlePaymentFailed}

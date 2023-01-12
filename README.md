@@ -1,6 +1,6 @@
-# Demo Plug Checkout React
+# Demo malga Checkout React
 
-This project is a demo of Plug Checkout running on React
+This project is a demo of malga Checkout running on React
 
 ## Running App
 
@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Learn More
 
-You can know more about Plug on our [website](https://www.plugpagamentos.com/).
+You can know more about Malga on our [website](https://www.malga.io/).
