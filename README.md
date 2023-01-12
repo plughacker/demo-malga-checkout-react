@@ -1,6 +1,6 @@
-# Demo malga Checkout React
+# Demo Malga Checkout React
 
-This project is a demo of malga Checkout running on React
+This project is a demo of Malga Checkout running on React
 
 ## Running App
 
